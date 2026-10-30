@@ -165,6 +165,7 @@ const closeBtn: React.CSSProperties = {
   transition: "color 0.15s, background 0.15s",
 };
 
+<<<<<<< Updated upstream
 const fieldLabel: React.CSSProperties = {
   display: "block", marginBottom: 8,
   fontSize: "0.7rem", fontWeight: 700,
@@ -190,6 +191,8 @@ const btnPrimary: React.CSSProperties = {
   cursor: "pointer", transition: "background 0.15s",
 };
 
+=======
+>>>>>>> Stashed changes
 const btnSecondary: React.CSSProperties = {
   padding: "10px 18px",
   background: "transparent", border: `1px solid ${C.border}`,
@@ -2551,31 +2554,29 @@ export function Sidebar({ active, onSelect, children }: SidebarProps) {
           aria-modal="true"
         >
           <div
-            className={`klovy-shell${newChannelClosing ? " closing" : ""}`}
+            className={`klovy-shell channel-dialog${newChannelClosing ? " closing" : ""}`}
             style={{ ...modalCard, animation: "none" }}
           >
-            <div style={modalHeader}>
+            <div className="channel-dialog__header">
               <div>
-                <p style={modalTitle}>{t("sidebar.modals.newChannel.title")}</p>
-                <p style={modalSubtitle}>{t("sidebar.modals.newChannel.hint")}</p>
+                <p className="channel-dialog__title">{t("sidebar.modals.newChannel.title")}</p>
+                <p className="channel-dialog__subtitle">{t("sidebar.modals.newChannel.hint")}</p>
               </div>
-              <HoverBtn type="button" style={closeBtn} hoverStyle={{ background: C.bgHover, color: C.text }} aria-label={t("common.close")} onClick={() => handleCloseNewChannel()}>×</HoverBtn>
+              <HoverBtn type="button" style={closeBtn} aria-label={t("common.close")} onClick={() => handleCloseNewChannel()}>×</HoverBtn>
             </div>
-            <div style={modalBody}>
-              <label style={fieldLabel}>{t("sidebar.modals.newChannel.nameLabel")}</label>
-              <input ref={channelInputRef} style={textInput} value={channelName}
+            <div className="channel-dialog__body">
+              <label className="channel-dialog__label">{t("sidebar.modals.newChannel.nameLabel")}</label>
+              <input ref={channelInputRef} className="channel-dialog__input" value={channelName}
                 maxLength={50}
                 minLength={3}
                 onChange={(e) => setChannelName(e.target.value.slice(0, 50))}
                 placeholder={t("sidebar.modals.newChannel.namePlaceholder")}
                 onKeyDown={(e) => e.key === "Enter" && handleNewChannel()}
-                onFocus={(e) => { e.currentTarget.style.borderColor = C.accent; e.currentTarget.style.background = "#141414"; }}
-                onBlur={(e) => { e.currentTarget.style.borderColor = C.border; e.currentTarget.style.background = C.bgDeep; }}
               />
             </div>
-            <div style={modalFooter}>
-              <HoverBtn type="button" style={btnSecondary} hoverStyle={{ background: C.bgHover, color: C.text }} onClick={() => handleCloseNewChannel()}>{t("common.cancel")}</HoverBtn>
-              <HoverBtn type="button" style={btnPrimary} hoverStyle={{ background: C.accentHover }} onClick={handleNewChannel}>{t("sidebar.modals.newChannel.submit")}</HoverBtn>
+            <div className="channel-dialog__footer">
+              <HoverBtn type="button" className="channel-dialog__button channel-dialog__button--secondary" onClick={() => handleCloseNewChannel()}>{t("common.cancel")}</HoverBtn>
+              <HoverBtn type="button" className="channel-dialog__button channel-dialog__button--primary" onClick={handleNewChannel}>{t("sidebar.modals.newChannel.submit")}</HoverBtn>
             </div>
           </div>
         </div>

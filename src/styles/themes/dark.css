@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 :root,:root[data-theme="dark"] {
   --bg-shell: #18191C;
   --bg-chat: var(--bg-shell);
@@ -7,38 +8,62 @@
   --bg-card: #25272B;
   --bg-hover: #2C2E33;
   --bg-active: rgba(122, 90, 245, 0.14);
+=======
+/* Obecnie uzywany jest halloweenowo-ciemny motyw, stary motyw jest w themes/halloween/dark_default.css */
+>>>>>>> Stashed changes
 
-  --border: rgba(255, 255, 255, 0.06);
-  --border-light: rgba(255, 255, 255, 0.04);
+:root, :root[data-theme="dark"] {
+  --bg-shell: #100C14;
+  --bg-chat: #120E17;
+  --bg-deep: #0A070E;
+  --bg-panel: #1A1421;
+  --bg-elevated: #271D30;
+  --bg-card: #211929;
+  --bg-hover: #33233D;
+  --bg-active: rgba(255, 133, 36, 0.16);
 
-  --text: #ECEDEE;
-  --quote-text: #B5A1FA;
-  --text-muted: #9BA0A6;
-  --text-dim: #6B7076;
+  --border: rgba(188, 143, 220, 0.15);
+  --border-light: rgba(217, 190, 237, 0.07);
 
+<<<<<<< Updated upstream
   --accent: #7A5AF5;
   --accent-hover: #6941C6;
   --accent-dim: rgba(122, 90, 245, 0.14);
   --accent-border: rgba(122, 90, 245, 0.32);
+=======
+  --text: #F5EDF8;
+  --quote-text: #CAA0FF;
+  --text-muted: #B5A5BF;
+  --text-dim: #81708E;
+>>>>>>> Stashed changes
 
-  --danger: #FF3B30;
-  --danger-dim: rgba(255, 59, 48, 0.08);
-  --danger-border: rgba(255, 59, 48, 0.25);
+  --accent: #FF8524;
+  --accent-hover: #FFA34D;
+  --accent-dim: rgba(255, 133, 36, 0.12);
+  --accent-border: rgba(255, 133, 36, 0.40);
 
-  --success: #4ADE80;
-  --success-dim: rgba(74, 222, 128, 0.08);
-  --success-border: rgba(74, 222, 128, 0.28);
+  --danger: #FF626B;
+  --danger-dim: rgba(255, 98, 107, 0.12);
+  --danger-border: rgba(255, 98, 107, 0.32);
 
-  --warning: #FF9F0A;
-  --warning-dim: rgba(255, 159, 10, 0.12);
-  --warning-border: rgba(255, 159, 10, 0.28);
+  --success: #ADE879;
+  --success-dim: rgba(173, 232, 121, 0.10);
+  --success-border: rgba(173, 232, 121, 0.30);
 
-  --bg-settings-nav: var(--bg-shell);
-  --bg-settings-surface: #1E2023;
-  --bg-settings-card: #25272B;
-  --bg-settings-card-hover: #2C2E33;
-  --bg-settings-active: #303239;
+  --warning: #FFD078;
+  --warning-dim: rgba(255, 208, 120, 0.11);
+  --warning-border: rgba(255, 208, 120, 0.32);
 
-  --shadow: 0 32px 80px rgba(0, 0, 0, 0.45);
-  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --bg-settings-nav: #100C14;
+  --bg-settings-surface: #17111D;
+  --bg-settings-card: #211929;
+  --bg-settings-card-hover: #30233B;
+  --bg-settings-active: #3C2947;
+
+  --shadow:
+    0 28px 80px rgba(0, 0, 0, 0.65),
+    0 0 40px rgba(139, 74, 190, 0.07);
+  --shadow-sm:
+    0 8px 24px rgba(0, 0, 0, 0.40),
+    0 0 16px rgba(255, 133, 36, 0.04);
 }

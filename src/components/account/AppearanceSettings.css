@@ -89,12 +89,16 @@
 
 .appearance-theme-preview--dark
 .appearance-theme-preview-sidebar {
-  background: #18191c;
+  background: #100C14;
 }
 
 .appearance-theme-preview--dark
 .appearance-theme-preview-message {
+<<<<<<< Updated upstream
   background: #7a5af5;
+=======
+  background: #FF8524;
+>>>>>>> Stashed changes
 }
 
 /* LIGHT PREVIEW */
@@ -105,12 +109,16 @@
 
 .appearance-theme-preview--light
 .appearance-theme-preview-sidebar {
-  background: #f1eefb;
+  background: #F3EBE1;
 }
 
 .appearance-theme-preview--light
 .appearance-theme-preview-message {
+<<<<<<< Updated upstream
   background: #7a5af5;
+=======
+  background: #BE4E0C;
+>>>>>>> Stashed changes
 }
 
 /* BLACK PREVIEW */
@@ -125,6 +133,7 @@
 
 .appearance-theme-preview--black
 .appearance-theme-preview-message {
+<<<<<<< Updated upstream
   background: #7a5af5;
 }
 
@@ -148,6 +157,9 @@
 .appearance-theme-preview--blue
 .appearance-theme-preview-message {
   background: #3b82f6;
+=======
+  background: #FF8524;
+>>>>>>> Stashed changes
 }
 
 .appearance-theme-info {

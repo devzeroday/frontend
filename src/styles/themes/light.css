@@ -1,4 +1,7 @@
+/* Obecnie uzywany jest halloweenowo-jasny motyw, stary motyw jest w themes/halloween/light_default.css */
+
 :root[data-theme="light"] {
+<<<<<<< Updated upstream
   --bg-shell: #f7f6fb;
   --bg-chat: var(--bg-shell);
   --bg-deep: #f1eefb;
@@ -7,20 +10,59 @@
   --bg-card: #f1eefb;
   --bg-hover: #e9e4fa;
   --bg-active: rgba(122, 90, 245, 0.14);
+=======
+  --bg-shell: #FAF5EE;
+  --bg-chat: #FCF8F2;
+  --bg-deep: #EFE6DB;
+  --bg-panel: #FFFCF8;
+  --bg-elevated: #FFFFFF;
+  --bg-card: #F3EBE1;
+  --bg-hover: #EADCCE;
+  --bg-active: rgba(190, 78, 12, 0.12);
+>>>>>>> Stashed changes
 
-  --border: rgba(23, 17, 54, 0.09);
-  --border-light: rgba(23, 17, 54, 0.06);
+  --border: rgba(66, 36, 73, 0.14);
+  --border-light: rgba(66, 36, 73, 0.07);
 
-  --text: #1a1626;
-  --quote-text: #b5a1fa;
-  --text-muted: #6b6580;
-  --text-dim: #9a94ad;
+  --text: #302036;
+  --quote-text: #7945A0;
+  --text-muted: #756277;
+  --text-dim: #8C778D;
 
+<<<<<<< Updated upstream
   --accent: #7A5AF5;
   --accent-hover: #6941C6;
   --accent-dim: rgba(122, 90, 245, 0.12);
   --accent-border: rgba(122, 90, 245, 0.3);
+=======
+  --accent: #BE4E0C;
+  --accent-hover: #A83F06;
+  --accent-dim: rgba(190, 78, 12, 0.10);
+  --accent-border: rgba(190, 78, 12, 0.32);
+>>>>>>> Stashed changes
 
-  --shadow: 0 24px 70px rgba(23, 17, 54, 0.14);
-  --shadow-sm: 0 8px 24px rgba(23, 17, 54, 0.1);
+  --danger: #BA3042;
+  --danger-dim: rgba(186, 48, 66, 0.08);
+  --danger-border: rgba(186, 48, 66, 0.25);
+
+  --success: #47732B;
+  --success-dim: rgba(71, 115, 43, 0.09);
+  --success-border: rgba(71, 115, 43, 0.26);
+
+  --warning: #926008;
+  --warning-dim: rgba(196, 133, 20, 0.12);
+  --warning-border: rgba(146, 96, 8, 0.28);
+
+  --bg-settings-nav: #F3EBE1;
+  --bg-settings-surface: #FAF5EE;
+  --bg-settings-card: #FFFCF8;
+  --bg-settings-card-hover: #F3EBE1;
+  --bg-settings-active: #EADCCE;
+
+  --shadow:
+    0 28px 80px rgba(56, 30, 63, 0.13),
+    0 0 40px rgba(190, 78, 12, 0.04);
+  --shadow-sm:
+    0 8px 24px rgba(56, 30, 63, 0.09),
+    0 0 16px rgba(190, 78, 12, 0.03);
 }

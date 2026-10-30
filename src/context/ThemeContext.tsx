@@ -6,7 +6,7 @@ import {
   type ReactNode,
 } from "react";
 
-export const THEMES = ["dark", "light", "black", "blue", "forest", "desert"] as const;
+export const THEMES = ["dark", "light", "black"] as const;
 
 export type Theme = (typeof THEMES)[number];
 
@@ -32,10 +32,7 @@ function readTheme(): Theme {
     return "dark";
   }
 
-  const savedTheme =
-    window.localStorage.getItem("klovy-theme");
-
-  if (savedTheme === "mint") return "forest";
+  const savedTheme = window.localStorage.getItem("klovy-theme");
 
   return isTheme(savedTheme)
     ? savedTheme

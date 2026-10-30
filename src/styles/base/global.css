@@ -12,9 +12,6 @@
 @import "../themes/dark.css";
 @import "../themes/light.css";
 @import "../themes/black.css";
-@import "../themes/blue.css";
-@import "../themes/forest.css";
-@import "../themes/desert.css";
 
 :root {
   --radius: 12px;
